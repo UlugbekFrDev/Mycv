@@ -1,0 +1,98 @@
+:root {
+    --black: #0f172a;
+    --white: #ffffff;
+    --yellow: #facc15;
+    --red: #ef4444;
+    --blue: #3b82f6;
+    --gradient: linear-gradient(135deg, #111, #3b82f6, #facc15, #ef4444);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .subtitle {
+    color: var(--yellow);
+    margin-bottom: 30px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .tabs button {
+    padding: 12px 20px;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .tabs button:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+  }
+  
+  .tab-content {
+    background-color: #1e293b;
+    padding: 25px;
+    margin: 0 auto;
+    max-width: 700px;
+    border-left: 5px solid var(--blue);
+    border-radius: 10px;
+    animation: slideIn 0.4s ease;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: var(--red);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+
+  .linkProjects{
+    color: white;
+  }
